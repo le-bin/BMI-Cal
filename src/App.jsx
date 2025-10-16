@@ -31,11 +31,12 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>BMI Calculator</h1>
-      <form onSubmit={calBmi}>
+      <h1 id="heading">BMI Calculator</h1>
+      <form className="format" onSubmit={calBmi}>
         <div>
-          <label>Weight(lbs)</label>
+          <label id="weight">Weight(lbs)</label>
           <input
+            className="input"
             type="text"
             placeholder="Enter the weight value"
             value={weight}
@@ -44,8 +45,9 @@ const App = () => {
         </div>
 
         <div>
-          <label>Height</label>
+          <label id="height">Height</label>
           <input
+            className="input"
             type="text"
             placeholder="Enter the height value"
             value={height}
